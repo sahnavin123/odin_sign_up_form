@@ -5,8 +5,12 @@ const errorText = document.querySelector(".error-msg");
 confirmPasswordInput.addEventListener("input", checkPasswordMatch);
 
 function checkPasswordMatch() {
-  if (passwordInput.value !== confirmPasswordInput.value) {
-    errorText.style.display = "block";
+  if (passwordInput.value !== "" && confirmPasswordInput.value !== "") {
+    if (passwordInput.value !== confirmPasswordInput.value) {
+      errorText.style.display = "block";
+    } else {
+      errorText.style.display = "none";
+    }
   } else {
     errorText.style.display = "none";
   }

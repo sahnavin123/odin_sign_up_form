@@ -23,7 +23,7 @@
                     realize your deepest dreams. <br> Sign up now to get started</p>
                 <p class="text">You Know you want to.</p>
             </div>
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validateForm()">
                 <fieldset class="input-field">
                     <h3>Let's do this!</h3>
                     <div class="alignment">
@@ -42,11 +42,11 @@
                     <div class="alignment">
                         <div class="fields">
                             <label for="email">EMAIL</label>
-                            <input type="text" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="fields">
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="text" id="phone_number" name="phone_number" required>
+                            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}" required>
                         </div>
                     </div>
                     <div class="alignment">
