@@ -2,8 +2,6 @@ const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm_password");
 const errorText = document.querySelector(".error-msg");
 
-confirmPasswordInput.addEventListener("input", checkPasswordMatch);
-
 const checkPasswordMatch = () => {
   if (passwordInput.value !== "" && confirmPasswordInput.value !== "") {
     if (passwordInput.value !== confirmPasswordInput.value) {
@@ -15,3 +13,5 @@ const checkPasswordMatch = () => {
     errorText.style.display = "none";
   }
 };
+
+confirmPasswordInput.addEventListener("input", checkPasswordMatch);
