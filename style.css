@@ -105,7 +105,20 @@ input:focus:valid {
   box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
 }
 
+input.invalid {
+  border: 2px solid rgb(255, 0, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
+input.invalid:focus {
+  border: 2px solid rgb(255, 0, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
 .error-msg {
+  padding-top: 0.2rem;
   display: none;
   color: red;
   font-size: 10px;
