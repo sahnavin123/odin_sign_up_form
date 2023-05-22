@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+main .left-view {
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vw;
+  height: 100vh;
+  color: white;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  padding-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: full;
+  height: 18%;
+}
+
+.title-container .text {
+  font-size: 5rem;
+  margin-top: 1rem;
+  font-family: Norse-Bold;
+}
+
+.right-view .welcome-text {
+  padding-top: 8rem;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  font-weight: bold;
+  background-color: #eeeeee;
+}
+
+.right-view .welcome-text p:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+form .input-field {
+  padding-left: 2rem;
+  border: none;
+  box-shadow: -1px 4px 4px -1px rgb(0 0 0 / 20%);
+  padding-bottom: 2rem;
+}
+
+form .input-field h3 {
+  padding-top: 2rem;
+}
+
+form .input-field .alignment {
+  display: flex;
+  gap: 4rem;
+}
+
+form .input-field .alignment .fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+form label {
+  color: #3b3b3c;
+}
+
+input {
+  width: 20rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+input :focus {
+  border: 1px solid grey;
+}
+
+input:focus:invalid {
+  border: 2px solid rgb(255, 0, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
+input:focus:valid {
+  border: 2px solid rgb(0, 255, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
+input.invalid {
+  border: 2px solid rgb(255, 0, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
+input.invalid:focus {
+  border: 2px solid rgb(255, 0, 0);
+  outline: none;
+  box-shadow: 4px 4px 5px -2px rgb(73 97 215 / 62%);
+}
+
+.error-msg {
+  padding-top: 0.2rem;
+  display: none;
+  color: red;
+  font-size: 10px;
+  margin: 1px;
+}
+
+form .btn-field {
+  padding-left: 2rem;
+  border: none;
+}
+
+.btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #596d48;
+  border: none;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+form .btn-field span {
+  color: #596d48;
+  cursor: pointer;
+}
